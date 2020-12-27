@@ -7,6 +7,7 @@ namespace Tests
         public int Add(string input)
         {
             return int.Parse(input);
+            
         }
     }
 }

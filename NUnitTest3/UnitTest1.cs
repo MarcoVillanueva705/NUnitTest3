@@ -9,9 +9,15 @@ namespace Tests
         //public void UnitUnderTest_Scenario_ExpectedOutcome()
         public void Add_EmptyString_Returns_0()
         {
+            //Arrange: initialize object and sets the value of the data
+            //that is passed to the method under test
             StringCalculator calc = new StringCalculator();
+
+            //Act: invokes the method under test ('Add' in StringCalculator)
             int expectedResult = 0;
-            int result = calc.Add("");
+            int result = calc.Add("0");
+
+            //Assert: verifies that the action of the method under test behaves as expected
             Assert.AreEqual(expectedResult, result);
         }
         [Test]
