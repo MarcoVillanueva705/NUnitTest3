@@ -15,7 +15,10 @@ namespace Tests
 
             //Act: invokes the method under test ('Add' in StringCalculator)
             int expectedResult = 0;
-            int result = calc.Add("0");
+            
+            //this test started failing; see fix in
+            //StringCalculator.cs
+            int result = calc.Add("");
 
             //Assert: verifies that the action of the method under test behaves as expected
             Assert.AreEqual(expectedResult, result);

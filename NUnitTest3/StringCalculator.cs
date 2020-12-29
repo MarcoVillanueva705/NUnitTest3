@@ -6,6 +6,9 @@ namespace Tests
     {
         public int Add(string input)
         {
+            //solution for test one to pass
+            if (string.IsNullOrEmpty(input))
+                return 0;
             return int.Parse(input);
             
         }
